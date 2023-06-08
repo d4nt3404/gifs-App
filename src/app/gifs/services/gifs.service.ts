@@ -25,10 +25,6 @@ get tagsHistory() {
   if (tag.length === 0) return;
   this.organizeHistory(tag);
 
-  //fetch('http://api.giphy.com/v1/gifs/search?api_key=NcktCdAb89cA4PP9jG3oePuOucpDDKEi&q=office&limit=2')
-  //.then( resp => resp.json()
-  //.then( data => console.log(data)));
-
   const params = new HttpParams()
   .set('api_key', this.apiKey)
   .set('limit', '10')
