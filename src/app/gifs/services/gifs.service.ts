@@ -11,7 +11,7 @@ export class GifsService {
   gifsList: Gif[] = [];
   private _tagsHistory: string[] = [];
   private apiKey: string = 'NcktCdAb89cA4PP9jG3oePuOucpDDKEi';
-  private serviceUrl: string = 'http://api.giphy.com/v1/gifs';
+  private serviceUrl: string = 'https://api.giphy.com/v1/gifs';
 
   constructor(private http: HttpClient) {
     this.GetLocalStorage();
